@@ -16,9 +16,38 @@ body {
 	float: left;
 }
 
+#slider {
+  width: 100%;
+  height: 100px !important;
+  background: #EBC137;
+  overflow: hidden;
+  float: left;
+}
+
+
+#slider ul{
+  padding-top: 10px;
+  list-style-type: none;
+  position: relative;
+}
+
+#slider li{
+  float: left;
+  font-size: 3em;
+  color: #771E10;
+  padding: 0 26px;
+}
+
+#slider strong{
+  color: #000;
+}
+
 #tables {
   width: 100%;
   float: left;
+  height: auto;
+  padding-top: 20px;
+  overflow: hidden;
 }
 
 .wholeEventLive {
@@ -27,14 +56,13 @@ body {
 	float: left;
 }
 
-.wholeEventTable {
-	padding-top: 20px;
+.table {
 	width: 50%;
 	float: left;
 }
 
 
-.matches {	
+.results {	
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #771E10), color-stop(100%, #771E10));
   background-image: -webkit-linear-gradient(top, #771E10, #771E10);
   background-image: -moz-linear-gradient(top, #771E10, #771E10);
@@ -62,11 +90,12 @@ body {
 	margin: 0 auto;
 	color: #fff;
   font: bold 40px "helvetica neue", helvetica, arial, sans-serif;
-  padding-bottom: 30px;
+  overflow: hidden;
+  height: 100%;
 	/*text-align: center;*/
 }
 
-.groupName {
+.group_name {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #771E10), color-stop(100%, #771E10));
   background-image: -webkit-linear-gradient(top, #771E10, #771E10);
   background-image: -moz-linear-gradient(top, #771E10, #771E10);
@@ -95,7 +124,7 @@ body {
 	font-size: 40px;
 }
 
-.eventDiv {
+.title {
 	width: 97%;
 	margin: 0 auto;
 }
@@ -125,7 +154,7 @@ body {
 	float: left;
 }
 
-.resultTable {
+.results_table {
 	text-align: center;
 	color: #ffffff;
 	font-size: 70%;
@@ -142,8 +171,12 @@ body {
 	text-align: left;
 }
 
-.resultTable > td, th {
+.results-table > td, th {
 	padding: 0 5px;
+}
+
+.matches {
+  overflow: hidden;
 }
 
 .points  {
@@ -160,33 +193,7 @@ body {
 	background-color: #8c9cbf;	
 }
 
-#slider {
-  width: 100%;
-  height: 100px !important;
-  background: #EBC137;
-  overflow: hidden;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
 
-
-#slider ul{
-  padding-top: 10px;
-  list-style-type: none;
-  position: relative;
-}
-
-#slider li{
-  float: left;
-  font-size: 3em;
-  color: #771E10;
-  padding: 0 26px;
-}
-
-#slider strong{
-  color: #000;
-}
 .eventName {
   float: right;
   color: #EBC137;
@@ -217,7 +224,9 @@ body {
   width: 100%;
 }
 
-.matches ul {
+
+
+.results ul {
   list-style: none;
   text-align: center;
 }

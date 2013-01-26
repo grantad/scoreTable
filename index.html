@@ -1,26 +1,31 @@
 <html>
-  <head>   
-    <title> scoreTable </title>    
+  <head>
+    <title> scoreTable </title>
     <meta http-equiv="Content-Language" content="en-EN">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/scrollingcarousel.2.0.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
 
     <script>
-      $(document).ready(function() {  
+      $(document).ready(function() {
         $('#slider').scrollingCarousel( {
           scrollerAlignment : 'horizontal',
           autoScroll: true,
           autoScrollSpeed: 20000
         });
 
-        $('#played').each(function() {
-          scrollingCarousel( {
+        $('.matches').each(function() {
+          $(this).css('height', $(window).height() - 220 - $(this).prev().height());
+          $(this).scrollingCarousel({
               scrollerAlignment : 'vertical',
               autoScroll: true,
               autoScrollSpeed: 20000
             });
+        });
+
+        $('.results').each(function(){
+          $(this).css('max-height', $(window).height() - 180);
         });
       });
     </script>
@@ -40,166 +45,183 @@
     </div>
 
     <div id="tables">
-      <div class="group_tables">
- 
-        <div class="wholeEventTable">
-          <div class="eventDiv"><span class="groupName">Group A</span></div>
-          <div class="matches">
-            <table class="resultTable">
-              <tbody>
-                <tr>
-                  <th>Pos.</th>
-                  <th></th>
-                  <th>S</th>
-                  <th>W</th>
-                  <th>D</th>
-                  <th>L</th>
-                  <th>P</th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-              </tbody>
-            </table>	
-            <span class="eventName">Soccer A</span>			
+       <div class="table">
+          <div class="title"><span class="group_name">Group B</span></div>
+            <div class="results">
+              <table class="results_table">
+                <tbody>
+                  <tr>
+                    <th>Pos.</th>
+                    <th></th>
+                    <th>S</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>P</th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="matches">
+                <ul>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovia 1:1 tarabovia </li>
+                  <li> xlc 6:1 xlc primary </li>
+                </ul>
+              </div>
+           <span class="eventName">Soccer A</span>
           </div>
         </div>
 
-        <div class="wholeEventTable">
-          <div class="eventDiv"><span class="groupName">Group B</span></div>
-          <div class="matches">
-            <table class="resultTable">
-              <tbody>
-                <tr>
-                  <th>Pos.</th>
-                  <th></th>
-                  <th>S</th>
-                  <th>W</th>
-                  <th>D</th>
-                  <th>L</th>
-                  <th>P</th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td class="name">XLC</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td class="points"><strong>6</strong></td>
-                </tr>
-              </tbody>
-            </table>	
-            <span class="eventName">Soccer A</span>			
-          </div>
-        </div>
-      </div>
-      <div style="clear: both;"/>
-  
-      <div class="matches_played">
-        <div class="wholeEventTable">
-          <div class="eventDiv"><span class="groupName">Group A</span></div>
-          <div class="matches" id="played">
-              <ul>
-                <li> ferovci 5:0 tarabovci </li>
-                <li> ferovia 1:1 tarabovia </li>
-                <li> xlc 0:1 xlc primary </li>
-              </ul>
-            <span class="eventName">Soccer A</span>			
+       <div class="table">
+          <div class="title"><span class="group_name">Group B</span></div>
+            <div class="results">
+              <table class="results_table">
+                <tbody>
+                  <tr>
+                    <th>Pos.</th>
+                    <th></th>
+                    <th>S</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>P</th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td class="name">XLC</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="points"><strong>6</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="matches">
+                <ul>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovci 16:0 tarabovci </li>
+                  <li> ferovia 1:1 tarabovia </li>
+                  <li> xlc 6:1 xlc primary </li>
+                </ul>
+              </div>
+           <span class="eventName">Soccer A</span>
           </div>
         </div>
 
-        <div class="wholeEventTable">
-          <div class="eventDiv"><span class="groupName">Group B</span></div>
-          <div class="matches" id="played">
-              <ul>
-                <li> ferovci 16:0 tarabovci </li>
-                <li> ferovia 1:1 tarabovia </li>
-                <li> xlc 6:1 xlc primary </li>
-              </ul>
-            <span class="eventName">Soccer A</span>			
-          </div>
-        </div>
-      </div>
-      
+
       <div style="clear: both;"></div>
     </div>
 
@@ -209,4 +231,4 @@
 </div-->
 
   </body>
-</html> 
+</html>
