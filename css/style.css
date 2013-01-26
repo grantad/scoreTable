@@ -8,6 +8,7 @@ body {
   color: #cccccc;
   margin: 0;
   font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
+  overflow: hidden;
 }
 
 #live{
