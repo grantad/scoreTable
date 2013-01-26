@@ -177,6 +177,7 @@ body {
 
 .matches {
   overflow: hidden;
+  padding: 5px 0;
 }
 
 .points  {
@@ -223,8 +224,6 @@ body {
 .matches_played {
   width: 100%;
 }
-
-
 
 .results ul {
   list-style: none;
