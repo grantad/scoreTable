@@ -40,8 +40,8 @@
 
         setInterval(function(){
           table = tables.shift();
-          table.fadeOut();
-          tables[tables.length-1].fadeIn();
+          table.fadeOut('slow');
+          tables[tables.length-1].fadeIn('slow');
           console.log(tables[tables.length-1].find('.group_name').text());
           tables.push(table);
 
