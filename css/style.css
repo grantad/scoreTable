@@ -18,7 +18,6 @@ body {
 
 #tables {
   width: 100%;
-  position: relative;
   float: left;
 }
 
@@ -208,5 +207,13 @@ body {
   z-index: 1000000;
   text-align: center;
   font-size: 2em;
+}
+
+.group_tables {
+  width: 100%;
+}
+
+.matches_played {
+  width: 100%;
 }
 
