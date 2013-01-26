@@ -217,3 +217,8 @@ body {
   width: 100%;
 }
 
+.matches ul {
+  list-style: none;
+  text-align: center;
+}
+
