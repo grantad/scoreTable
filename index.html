@@ -33,6 +33,9 @@
           tables.push($(this));
         });
 
+        if (tables.length <= 2) {
+          return;
+        }
 
         for (var i = 2; i < tables.length; i++) {
           tables[i].hide();
