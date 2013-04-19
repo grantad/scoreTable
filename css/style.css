@@ -133,26 +133,25 @@ body {
 .match {
 	width: 97%;
 	margin: 0 auto;
-  font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
+    font-family: "Trebuchet MS",Helvetica,Jamrul,sans-serif;
 	padding: 10px;
 }
 
-.leftName {
+
+
+.lname {
 	width: 40%;
-	text-align: center;	
-	float: left;
+	text-align: right;	
 }
 
-.rightName {
+.rname {
 	width: 40%;
-	text-align: center;
-	float: right;
+	text-align: left;
 }
 
 .score {
 	width: 20%;
 	text-align: center;
-	float: left;
 }
 
 .results_table {
@@ -182,8 +181,12 @@ body {
   height: 220px;
 }
 
-.matches ul {
-  margin: 0;
+.matches table {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+    font-family: Georgia;
 }
 
 .points  {
@@ -229,11 +232,6 @@ body {
 
 .matches_played {
   width: 100%;
-}
-
-.results ul {
-  list-style: none;
-  text-align: center;
 }
 
 /*---------------------------------
