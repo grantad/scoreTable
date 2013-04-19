@@ -6,9 +6,9 @@ $(document).ready(function() {
   });
 
   $('.matches').each(function() {
-    $(this).css('height', $(window).height() - 230 - $(this).prev().height());
     $(this).sliderkit({
         auto:true,
+        autospeed: 4500,
         circular:true,
         shownavitems:1,
         panelfx:"sliding",
@@ -44,6 +44,6 @@ $(document).ready(function() {
     //console.log(tables[tables.length-1].find('.group_name').text());
     tables.push(table);
 
-  }, 10000);
+  }, 15000);
 
 });

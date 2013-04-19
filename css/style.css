@@ -179,6 +179,11 @@ body {
 .matches {
   overflow: hidden;
   padding: 5px 0;
+  height: 220px;
+}
+
+.matches ul {
+  margin: 0;
 }
 
 .points  {
@@ -230,4 +235,22 @@ body {
   list-style: none;
   text-align: center;
 }
+
+/*---------------------------------
+ *  Panels
+ *---------------------------------*/
+.sliderkit-panel{z-index:1;position:absolute;overflow:hidden;}
+.sliderkit-panel-active{z-index:5;}
+.sliderkit-panel-old{z-index:4;}
+
+/* Panels > Overlay */
+.sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
+.sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
+.sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
+
+.sliderkit-panels {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
