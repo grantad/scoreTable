@@ -7,11 +7,17 @@ $(document).ready(function() {
 
   $('.matches').each(function() {
     $(this).css('height', $(window).height() - 230 - $(this).prev().height());
-    $(this).scrollingCarousel({
-        scrollerAlignment : 'vertical',
-        autoScroll: true,
-        autoScrollSpeed: 10000
-      });
+    $(this).sliderkit({
+        auto:true,
+        circular:true,
+        shownavitems:1,
+        panelfx:"sliding",
+        panelfxspeed:400,
+        panelfxeasing:"easeOutCirc",
+        mousewheel:false,
+        verticalnav:true,
+        verticalslide:true
+    });
   });
 
   $('.results').each(function(){
